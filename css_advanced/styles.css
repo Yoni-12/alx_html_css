@@ -159,3 +159,64 @@ text-align: center
     object-fit: cover;
     margin-bottom: 10px;
 }
+
+/* Testimonials Section (keep as you already have) */
+.testimonials {
+  background-color: #C271FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0;
+}
+
+/* Inner row */
+.testimonial-group {
+  margin-left: 300px;
+  display: flex;
+  align-items: center;
+  max-width: 943px;      /* from Figma */
+  width: 100%;
+  gap: 0;             /* ⬅ almost no gap between image & text */
+}
+
+/* Image fixed size */
+.testimonial-group img {
+  flex: 0 0 160px;       /* ⬅ reserve exactly 160px */
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  /* remove any margins you added before */
+  margin: 0;
+}
+
+/* Text column gets a fixed basis so it keeps 2 lines */
+.testimonial-text {
+  flex: 0 0 730px;       /* ⬅ exact text width from Figma */
+  max-width: 730px;
+  margin-right: 100px;
+  color: #fff;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+/* Typography (as before) */
+.testimonial-text blockquote {
+  font-size: 22px;
+  line-height: 33.6px;
+  margin: 0 0 40px 0;
+  font-weight: 400;
+}
+.testimonial-text h3 {
+  font-size: 22px;
+  line-height: 33.6px;
+  margin: 0;
+  font-weight: 700;
+}
+.testimonial-text p {
+  font-size: 22px;
+  line-height: 33.6px;
+  margin: 0 0 0;
+  font-weight: 400;
+  font-style: italic;
+}
+
