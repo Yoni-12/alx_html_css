@@ -1,0 +1,161 @@
+header {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: transparent;
+  color: white;
+}
+
+header nav {
+  max-width: 1200px; /* or value from Figma */
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px; /* match Figma spacing */
+}
+
+header nav img {
+  height: 40px; /* exact from Figma */
+}
+
+header nav ul {
+  display: flex;
+  gap: 30px; /* spacing from Figma */
+  list-style: none;
+}
+
+header nav ul a {
+  text-decoration: none;
+  font-size: 16px; /* from Figma */
+  font-weight: 600;
+  color: white; /* Figma text color */
+}
+
+header nav ul a:hover {
+  color: #ff6565; /* hover color from Figma */
+}
+
+main > section:first-of-type {
+  background: url("./images/background.jpg") no-repeat center center/cover;
+  height: 100vh; /* or exact px value from Figma */
+}
+
+.banner {
+  position:relative;
+  background: url("./images/background.jpg") no-repeat center center/cover;
+  color: white;
+  padding: 80px 20px 200px;
+  text-align: center;
+}
+
+.banner-content{
+    position:relative;
+    top: -20px;
+    left: 2px;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 8px;
+}
+
+.banner-content h1 {
+font-family: Source Sans Pro;
+font-weight: 700;
+font-size: 120px;
+line-height: 100%;
+letter-spacing: 0px;
+text-align: center;
+}
+
+/* Spans container directly under heading */
+.banner-tag {
+  display: flex;              /* put spans in a row */
+  justify-content: center;    /* center spans under heading */
+  gap: 30px;                  /* space between spans */
+  margin-top: -80px;           /* small gap below h1 */
+  margin-bottom: 30px;        /* space above button */
+}
+
+/* Individual spans */
+.banner-tag span {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+}
+
+/* Button below spans */
+.banner-content button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  background-color: #C271FF;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-bottom: 100px;  /* center button horizontally */
+  
+}
+
+.banner-content button:hover {
+  background-color: #a050d6;   /* darker shade on hover */
+}
+
+.pros h2{
+    font-family: Source Sans Pro;
+font-weight: 700;
+font-size: 32px;
+line-height: 100%;
+letter-spacing: 0px;
+text-align: center
+}
+.pros h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 100px;    /* space below */
+  margin-top: 0;          /* remove space above */
+  color: white;
+}
+
+
+.pros h2 .highlight {
+  color: #C271FF;   
+}
+
+
+.banner .pros {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.pros-cards {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.cards {
+    max-width: 100px;
+    text-align: center;
+    color: white;
+}
+
+.cards img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
